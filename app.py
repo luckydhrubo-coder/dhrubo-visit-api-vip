@@ -110,7 +110,7 @@ async def visit(session, url, token, uid, data):
         app.logger.error(f"❌ Visit error: {e}")
         return False, None
 
-async def send_until_1000_success(tokens, uid, server_name, target_success=1000):
+async def send_until_1000_success(tokens, uid, server_name, target_success=4000):
     url = get_url(server_name)
     connector = aiohttp.TCPConnector(limit=0)
     total_success = 0
