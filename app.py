@@ -181,19 +181,17 @@ def send_visits():
     ))
 
     if player_info:
-    player_info_response = {
-        "fail": target_success - total_success,
-        "level": player_info.get("level", 0),
-        "likes": player_info.get("likes", 0),
-        "nickname": player_info.get("nickname", ""),
-        "region": player_info.get("region", ""),
-        "success": total_success,
-        "uid": player_info.get("uid", 0),
-        "tokens_used": len(tokens),
-        "token_rotation": "active",
-        "developer": "DHRUBO",
-        "developer_telegram_user_name": "DHRUBO_X_TCP",
-        "about_channel": "https://t.me/who_is_dhrubo"
+        player_info_response = {
+            "fail": target_success - total_success,
+            "level": player_info.get("level", 0),
+            "likes": player_info.get("likes", 0),
+            "nickname": player_info.get("nickname", ""),
+            "region": player_info.get("region", ""),
+            "success": total_success,
+            "uid": player_info.get("uid", 0),
+            "tokens_used": len(tokens),
+            "token_rotation": "active",
+            "developer": "t.me/DHRUBO_X_TCP"
     }
         return jsonify(player_info_response), 200
     else:
