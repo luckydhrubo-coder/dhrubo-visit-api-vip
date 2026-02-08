@@ -191,10 +191,8 @@ def send_visits():
         "uid": player_info.get("uid", 0),
         "tokens_used": len(tokens),
         "token_rotation": "active",
-
-        # credit info (no extra {})
         "developer": "DHRUBO",
-        "developer telegram name": "DHRUBO_X_TCP",
+        "developer_telegram_name": "DHRUBO_X_TCP",
         "about_channel": "https://t.me/who_is_dhrubo"
     }
         return jsonify(player_info_response), 200
