@@ -175,7 +175,7 @@ def send_visits():
     print(f"🔑 Token batch: {tokens[:3]}...")  # Show first 3 tokens for debugging
     print(f"Waiting for total {target_success} successful visits...")
 
-    total_success, total_sent, player_info = asyncio.run(send_until_1000_success(
+    total_success, total_sent, player_info = asyncio.run(send_until_10000_success(
         tokens, uid, region,
         target_success=target_success
     ))
